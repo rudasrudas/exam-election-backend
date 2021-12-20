@@ -19,7 +19,7 @@ public class PartyController {
         this.partyService = partyService;
     }
 
-    @GetMapping("/")
+    @GetMapping("")
     public List<Party> getAllParties(){
         return partyService.getAllParties();
     }

@@ -22,7 +22,7 @@ public class CandidateController {
 //    REQUIRED ENDPOINTS
 
     //Return a list with all candidates
-    @GetMapping("/")
+    @GetMapping("")
     public List<Candidate> getAllCandidates(){
         return candidateService.getAllCandidates();
     }
@@ -34,13 +34,13 @@ public class CandidateController {
     }
 
     //Create candidates for a given party
-    @PostMapping("/")
+    @PostMapping("")
     public Candidate addCandidate(@RequestBody Candidate candidate){
         return candidateService.addCandidate(candidate);
     }
 
     //Edit candidates for a given party
-    @PutMapping("/")
+    @PutMapping("")
     public Candidate editCandidate(@RequestBody Candidate candidate){
         return candidateService.editCandidate(candidate);
     }
