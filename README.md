@@ -1,2 +1,2 @@
 # exam-election-backend
-Exam project, election part
+Exam project, backend
