@@ -30,11 +30,17 @@ public class Party {
     @Column(name = "color")
     private String color; //Color code in Hexadecimal
 
+    @Basic
+    @Column(name = "votes", nullable = false)
+    private int votes;
+
 //    CONSTRUCTORS
 
-    public Party(String title, String initial) {
+    public Party(String title, String initial, String color, int votes) {
         this.title = title;
         this.initial = initial;
+        this.color = color;
+        this.votes = votes;
     }
 
 //    METHODS
