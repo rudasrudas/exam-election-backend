@@ -42,16 +42,4 @@ public class Candidate {
     public int getId() {
         return id;
     }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
-
-    public Party getParty() {
-        return party;
-    }
 }

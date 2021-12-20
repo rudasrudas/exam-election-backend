@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/candidates")
+@CrossOrigin(origins="*")
 public class CandidateController {
 
 //    SETUP

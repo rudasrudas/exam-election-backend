@@ -26,6 +26,10 @@ public class Party {
     @Column(name = "initial", nullable = false)
     private String initial;
 
+    @Basic
+    @Column(name = "color")
+    private String color; //Color code in Hexadecimal
+
 //    CONSTRUCTORS
 
     public Party(String title, String initial) {
