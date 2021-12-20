@@ -39,4 +39,6 @@ Deletes a candidate
 Returns a list of parties
 
 ##
+Link to frontend: https://github.com/rudasrudas/exam-election-frontend
+##
 Created by Justas Zdanavicius (just1531@stud.kea.dk), 20/12/2021
