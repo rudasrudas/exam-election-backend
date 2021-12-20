@@ -32,9 +32,10 @@ public class Candidate {
 
 //    CONSTRUCTORS
 
-    public Candidate(String name, String surname){
+    public Candidate(String name, String surname, Party party){
         this.name = name;
         this.surname = surname;
+        this.party = party;
     }
 
 //    METHODS

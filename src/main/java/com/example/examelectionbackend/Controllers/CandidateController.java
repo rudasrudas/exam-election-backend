@@ -2,6 +2,7 @@ package com.example.examelectionbackend.Controllers;
 
 import com.example.examelectionbackend.Entities.Candidate;
 import com.example.examelectionbackend.Services.CandidateService;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -36,13 +37,13 @@ public class CandidateController {
 
     //Create candidates for a given party
     @PostMapping("")
-    public Candidate addCandidate(@RequestBody Candidate candidate){
+    public Candidate addCandidate(@RequestBody ObjectNode candidate){
         return candidateService.addCandidate(candidate);
     }
 
     //Edit candidates for a given party
     @PutMapping("")
-    public Candidate editCandidate(@RequestBody Candidate candidate){
+    public Candidate editCandidate(@RequestBody ObjectNode candidate){
         return candidateService.editCandidate(candidate);
     }
 
