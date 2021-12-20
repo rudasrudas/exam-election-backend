@@ -1,7 +1,9 @@
 package com.example.examelectionbackend.Services;
 
 import com.example.examelectionbackend.Entities.Candidate;
+import com.example.examelectionbackend.Entities.Party;
 import com.example.examelectionbackend.Repositories.CandidateRepository;
+import com.example.examelectionbackend.Repositories.PartyRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,7 +24,7 @@ public class CandidateService {
     }
 
     public List<Candidate> getPartyCandidates(int partyId){
-        return candidateRepository.findCandidatesByParty(partyId);
+        return candidateRepository.findCandidatesByPartyId(partyId);
     }
 
     public Candidate addCandidate(Candidate candidate){
