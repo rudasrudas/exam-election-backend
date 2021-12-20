@@ -23,4 +23,5 @@ public class PartyController {
     public List<Party> getAllParties(){
         return partyService.getAllParties();
     }
+
 }
